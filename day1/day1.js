@@ -1028,11 +1028,7 @@ while(twice === undefined){
   data.forEach( value => {
     sum += value
     if(twice === undefined){
-
       if(listSum[sum] === 1) twice = sum
-      // Object.keys(listSum).forEach( element => {
-      //   if(element === sum) twice = element
-      // })
     }
     listSum[sum] = 1
   });
