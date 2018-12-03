@@ -1327,6 +1327,7 @@ area.forEach( line => {
 
 console.log(overlap)
 
+
 // Second half :
 let clearSpace = true
 let id = 0
