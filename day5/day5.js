@@ -6,7 +6,6 @@ const react = data => {
   while(data[cpt+1] != undefined){
     if( (data[cpt].charCodeAt(0) - data[cpt+1].charCodeAt(0)) === 32 || (data[cpt].charCodeAt(0) - data[cpt+1].charCodeAt(0)) === -32 ) {
         data = data.slice(0, cpt) + data.slice(cpt+2, data.length)
-        //data = data.slice(0, cpt).concat(data.slice(cpt + 2));
         cpt--
         if(cpt === -1) cpt = 0
     }
